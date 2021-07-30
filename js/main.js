@@ -57,3 +57,7 @@ for(let i = 0; i < classe.length; i++) {
         document.getElementById('allievo-' + (i + 1)).appendChild(elenco);
     }
 }
+
+
+
+// FARE IL CASO GENERALE IN UN NUOVO FILE CREANDO TUTTO DA JS
