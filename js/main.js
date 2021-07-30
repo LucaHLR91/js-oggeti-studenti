@@ -12,15 +12,12 @@ let studente = {
     eta : 30
 };
 
-console.log(studente);
-
 for(let key in studente) {
     let lista = document.createElement("li");
     lista.innerHTML = studente[key];
     document.getElementById('studente').appendChild(lista);
 
 };
-
 
 // CREO UN ARRAY DI OGGETTI
 let classe = [
@@ -38,4 +35,11 @@ let classe = [
 ];
 
 // STAMPO INFORMAZIONI STUDENTI
-for
+for(let i = 0; i < classe.length; i++) {
+    let allievo = classe[i];
+    for(let key in allievo) {
+        let elenco = document.createElement("li");
+        elenco.innerHTML = allievo[key];
+        document.getElementById('allievo-' + (i + 1)).appendChild(elenco);
+    }
+}
