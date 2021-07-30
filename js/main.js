@@ -34,6 +34,20 @@ let classe = [
     }
 ];
 
+// CHIEDO ALL'UTENTE DI INSERIRE UN NUOVO STUDENTE
+let newStudent = {};
+
+let nome = prompt('Inserisci il tuo nome');
+let cognome = prompt('Inserisci il tuo cognome');
+let eta = prompt('Inserisci la tua eta');
+
+newStudent.nome = nome;
+newStudent.cognome = cognome;
+newStudent.eta = eta;
+classe.push(newStudent);
+
+
+
 // STAMPO INFORMAZIONI STUDENTI
 for(let i = 0; i < classe.length; i++) {
     let allievo = classe[i];
